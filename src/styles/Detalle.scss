@@ -1,0 +1,509 @@
+.modal-container {
+  background-color: rgba($color: #000, $alpha: .7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  transition: all .2s;
+  z-index: 1;
+
+  .modal-body {
+    background-color: rgb(255, 0, 0);
+    width: 90%;
+    height: 70%;
+    min-width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    padding: 1rem;
+    display: flex;
+    border: 10px solid #660202de;
+  
+    .imagen-container {
+      display: grid;
+      place-items: center;
+      background-image: url(https://pokemonrevolution.net/forum/uploads/monthly_2021_03/DVMT-6OXcAE2rZY.jpg.afab972f972bd7fbd4253bc7aa1cf27f.jpg);
+      background-size: cover;
+      width: 50%;
+      border: 40px solid #eee;
+      border-radius: 50px 50px 50px 180px;
+  
+      .imagen-detalle {
+        width: 200px;
+        aspect-ratio: 8/10;
+      }
+    
+      .tag {
+        background-color: rgb(46, 55, 73);
+        color: #f2f2f2;
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .btn-deco1 {
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        position: absolute;
+        top: 5.5%;
+        left: 27%;
+        border-radius: 100%;
+        border: 2px solid #000;
+      }
+
+      .btn-deco2 {
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        position: absolute;
+        top: 5.5%;
+        left: 30%;
+        border-radius: 100%;
+        border: 2px solid #000;
+      }
+
+      .btn-deco3 {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        top: 89.5%;
+        left: 180px;
+        border-radius: 100%;
+        border: 5px solid #000;
+      }
+      
+      .line-deco {
+        width: 100px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 90%;
+        left: 40%;
+      }
+
+      .line-deco2 {
+        width: 100px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 92.5%;
+        left: 40%;
+      }
+
+      .line-deco3 {
+        width: 100px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 95%;
+        left: 40%;
+      }
+  
+    }
+
+    .data {
+      display: flex;
+      flex-direction: column;
+      padding: 0 1rem;
+      gap: 10px;
+      flex: 1;
+      color: #f2f2f2;
+
+      .titulo {
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 2.5rem;
+      }
+
+      .titulo-seccion {
+        font-weight: 500;
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+      }
+
+      .abilities {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0.5rem;
+
+        span {
+          background-color: #26e;
+          padding: 5px 10px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        text-align: center;
+
+        section {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-transform: capitalize;
+          background-color: #26e;
+          border-radius: 10px;
+          padding: 7px 15px;
+          box-shadow: 4px 4px 4px #212121;
+
+          .puntos {
+            border: 3px solid #000;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+            font-weight: 500;
+          }
+
+        }
+
+      }
+
+    }
+    
+  }
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 910px) {
+
+  .modal-container {
+
+    .modal-body {
+      height: 80%;
+
+      .imagen-container {
+
+        .btn-deco3 {
+          top: 91%;
+        }
+
+        .btn-deco2 {
+          left: 28%;
+        }
+
+        .btn-deco1 {
+          left: 33%;
+        }
+
+        .line-deco {
+          top: 91%;
+        }
+
+        .line-deco2 {
+          top: 93%;
+        }
+
+        .line-deco3 {
+          top: 95%;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 620px) and (max-width: 759px) {
+
+  .modal-container {
+    overflow-y: scroll;
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      height: 120%;
+      margin-top: 15rem;
+
+      .imagen-container {
+        width: 87%;
+        margin-right: 2rem;
+
+        .imagen-detalle {
+          width: 210px;
+        }
+
+        .btn-deco1 {
+          top: 3.5%;
+          left: 46%;
+        }
+
+        .btn-deco2 {
+          top: 3.5%;
+          left: 52%;
+        }
+
+        .btn-deco3 {
+          top: 38.5%;
+          left: 28%;
+        }
+
+        .line-deco {
+          top: 39%;
+          left: 70%;
+        }
+
+        .line-deco2 {
+          top: 40.2%;
+          left: 70%;
+        }
+
+        .line-deco3 {
+          top: 41.5%;
+          left: 70%;
+        }
+
+      }
+
+      .data {
+        background-color: red;
+
+        .titulo {
+          margin-bottom: 0.5rem;
+        }
+
+        .stats {
+          background-color: red;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 520px) and (max-width: 619px) {
+
+  .modal-container {
+    overflow-y: scroll;
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      height: 122%;
+      margin-top: 15rem;
+
+      .imagen-container {
+        width: 85%;
+        align-self: center;
+        // margin-right: 2rem;
+
+        .imagen-detalle {
+          width: 210px;
+        }
+
+        .btn-deco1 {
+          top: 3.5%;
+          left: 46%;
+        }
+
+        .btn-deco2 {
+          top: 3.5%;
+          left: 52%;
+        }
+
+        .btn-deco3 {
+          top: 39.3%;
+          left: 35%;
+        }
+
+        .line-deco {
+          top: 39.7%;
+          left: 70%;
+        }
+
+        .line-deco2 {
+          top: 41%;
+          left: 70%;
+        }
+
+        .line-deco3 {
+          top: 42.3%;
+          left: 70%;
+        }
+
+      }
+
+      .data {
+        background-color: red;
+
+        .titulo {
+          margin-bottom: 0.5rem;
+        }
+
+        .stats {
+          background-color: red;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 519px) {
+
+  .modal-container {
+    overflow-y: scroll;
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      height: 122%;
+      margin-top: 15rem;
+
+      .imagen-container {
+        width: 80%;
+        align-self: center;
+
+        .imagen-detalle {
+          width: 210px;
+        }
+
+        .btn-deco1 {
+          top: 3.5%;
+          left: 46%;
+        }
+
+        .btn-deco2 {
+          top: 3.5%;
+          left: 52%;
+        }
+
+        .btn-deco3 {
+          top: 39.3%;
+          left: 35%;
+        }
+
+        .line-deco {
+          top: 39.7%;
+          left: 60%;
+        }
+
+        .line-deco2 {
+          top: 41%;
+          left: 60%;
+        }
+
+        .line-deco3 {
+          top: 42.3%;
+          left: 60%;
+        }
+
+      }
+
+      .data {
+        background-color: red;
+
+        .titulo {
+          margin-bottom: 0.5rem;
+        }
+
+        .stats {
+          background-color: red;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+
+  .modal-container {
+    overflow-y: scroll;
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 122%;
+      margin-top: 15rem;
+
+      .imagen-container {
+        width: 65%;
+        align-self: center;
+
+        .imagen-detalle {
+          width: 160px;
+        }
+
+        .btn-deco1 {
+          top: 3.5%;
+          left: 46%;
+        }
+
+        .btn-deco2 {
+          top: 3.5%;
+          left: 52%;
+        }
+
+        .btn-deco3 {
+          width: 15px;
+          height: 15px;
+          top: 31%;
+          left: 40%;
+        }
+
+        .line-deco {
+          width: 70px;
+          top: 32%;
+          left: 60%;
+        }
+
+        .line-deco2 {
+          width: 70px;
+          top: 33.2%;
+          left: 60%;
+        }
+
+        .line-deco3 {
+          width: 70px;
+          top: 34.5%;
+          left: 60%;
+        }
+
+      }
+
+      .data {
+        background-color: red;
+        width: 80%;
+
+        .titulo {
+          margin-bottom: 0.5rem;
+        }
+
+        .stats {
+          background-color: red;
+        }
+
+      }
+
+    }
+
+  }
+
+}

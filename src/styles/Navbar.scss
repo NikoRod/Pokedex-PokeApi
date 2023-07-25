@@ -1,0 +1,54 @@
+nav {
+  background-color: rgb(214, 8, 8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem 0;
+  box-shadow: 4px 4px 8px rgba(0, 34, 0, 0.425);
+
+  svg {
+    height: 3rem;
+    width: auto;
+  }
+
+  .switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      height: 1.5rem;
+      width: auto;
+
+    }
+
+    label {
+      background-color: #ccc;
+      width: 4rem;
+      height: 1.5rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 2px;
+
+      input {
+        &:checked + span {
+          transform: translateX(2.5rem);
+        }
+      }
+
+
+      span {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 1.5rem;
+        background-color: #fff;
+        transition: .2s;
+      }
+
+    }
+
+  }
+
+}
